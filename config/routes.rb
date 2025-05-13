@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   # get("/companies/new", {:controller => "companies", :action => "new"})
   # get("/companies/:id", {:controller => "companies", :action => "show"})
   # post("/companies/", {:controller => "companies", :action => "create"})
-  # above is included in resources code and pulls company-specific data based on company id
-  # resources automatically creates both index and show
+  # get("/companies/:id/edit", {:controller => "companies", :action => "edit"})
+  # patch("/companies/:id", {:controller => "companies", :action => "update"})
+  # delete("/companies/:id", {:controller => "companies", :action => "destroy"})
+  # resources automatically creates all of these
   
   resources "contacts"
   # get("/contacts", {:controller => "contacts", :action => "index"})
