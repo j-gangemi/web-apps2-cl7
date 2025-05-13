@@ -1,3 +1,11 @@
+<form action="">
+  <label for="">How many bitcoin do you have?</label>
+  <input type="text" name="amount" id="amount_input" value="<%=params["amount"]%>">
+  <button>Submit</button>
+</form>
+
+<%if params["amount"] != nil%>
 <p>You have <%= @bitcoin %> Bitcoin.</p>
 <p>1 Bitcoin is valued at $<%= @usd_rate %> USD.</p>
 <p>Your Bitcoin is worth $<%= @usd_value %>.</p>
+<% end %>
